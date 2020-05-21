@@ -1,0 +1,23 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main(){
+	
+	int num1, num2, div;
+	
+	cout<<"Digite el primer numero: ";cin>>num1;
+	cout<<"Digite el sugundo numero: ";cin>>num2;
+	
+	div=num1%num2;
+	
+	if(div==0){
+		cout<<"\nSu numero "<<num1<<" es divisible entre "<<num2<<endl;
+	}
+	else{
+		cout<<"\nSus numeros no son divisibles"<<endl;
+	}
+	
+	getch();
+	return 0;
+}

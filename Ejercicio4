@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string.h>
+#include <conio.h>
+using namespace std;
+
+int main(){
+	char palabra[20];
+	int longitud=0;
+	
+	cout<<"Ingrese su palabra: ";cin>>palabra;
+	
+	longitud=strlen(palabra);
+	
+	if(longitud>10){
+		cout<<"\nSu palabra es mayor a 10 caracteres con "<<longitud<<" letras"<<endl;
+	}
+	else{
+		cout<<"\nSu palabra no supera los 10 caracteres con "<<longitud<<" letras"<<endl;
+	}
+	
+	if(longitud%2==0){
+		cout<<"Su longitud es par"<<endl;
+	}
+	else{
+		cout<<"Su longitud es impar"<<endl;
+	}
+	
+	getch();
+	return 0;
+}

@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string.h>
+#include <conio.h>
+using namespace std;
+
+int main(){
+	char palabra[20];
+	int longitud=0;
+	
+	cout<<"Ingrese su palabra: ";cin>>palabra;
+	
+	longitud=strlen(palabra);
+	
+	if (palabra[0]==palabra[longitud-1]){
+		cout<<"Su palabra inicia y termina con '"<<palabra[0]<<"'"<<endl;
+	}
+	else{
+		cout<<"Su palabra inicia con '"<<palabra[0]<<"' y termina con '"<<palabra[longitud-1]<<"'"<<endl;
+	}
+	
+	getch();
+	return 0;
+}

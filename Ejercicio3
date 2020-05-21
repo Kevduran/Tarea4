@@ -1,0 +1,23 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main(){
+	
+	int num;
+	
+	cout<<"Ingrese su numero: ";cin>>num;
+	
+	if (num==0){
+		cout<<"\nSu numero es 0"<<endl;
+	}
+	else if (num>0){
+		cout<<"\nSu numero es positivo"<<endl;
+	}
+	else if(num<0){
+		cout<<"\nSu numero es negativo"<<endl;
+	}
+	
+	getch();
+	return 0;
+}
